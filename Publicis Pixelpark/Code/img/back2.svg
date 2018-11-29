@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="13px" viewBox="0 0 21 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Thomas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-49.000000, -50.000000)">
+        <g id="Group" transform="translate(50.000000, 50.000000)" stroke="#000000">
+            <path d="M5,6 L20,6" id="Path"></path>
+            <polyline id="Rectangle" transform="translate(6.278175, 6.278175) rotate(45.000000) translate(-6.278175, -6.278175) " points="10.7175144 10.7175144 1.83883476 10.7175144 1.83883476 1.83883476"></polyline>
+        </g>
+    </g>
+</svg>
