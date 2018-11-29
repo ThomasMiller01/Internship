@@ -1,2 +1,2 @@
 # PublicisPixelpark
-Zweiwöchiges Schülerpraktikum, 12.03. - 23.03.2018
+Zweiwöchiges Schülerpraktikum vom 12.03. - 23.03.2018
