@@ -1,0 +1,26 @@
+{
+  "name": "NxtGenDevs",
+  "version": "0.0.1",
+  "description": "Desk",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-assemble": "^0.5.0",
+    "grunt-config": "~0.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-less": "~1.4.1",
+    "grunt-contrib-nodeunit": "~0.3.3",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-spritesmith": "^4.5.3",
+    "grunt-text-replace": "~0.3.12",
+    "load-grunt-config": "^0.13.1"
+  },
+  "dependencies": {
+    "assemble": "^0.24.3",
+    "grunt-cli": "^1.2.0",
+    "node-cli": "^0.1.0"
+  }
+}

@@ -1,0 +1,24 @@
+https://yelvy.com/
+https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+
+instagram
+  thomasmillerdev
+    access token: 7326426917.1677ed0.d4db80a6332e421297b8c29fbc359e7c
+	          7326426917.fa54567.066055ef5cd240e7b17eb13aeed7a724
+    client id: fa5456702d9c4b0ba152246e1bc87ad8
+    user id: 7326426917
+
+  felixkirschdesgn
+    access token: 7326248939.1677ed0.99358324733e48c8ba6faf3aaf761d5e
+    client id: 84f45d32f9d34690bc43f0501027b0c2
+    user id: 7326248939
+
+000webhost.com
+  website: pixelpraktikum
+  pass: Wichburgastraﬂe1
+  email: thomas.miller.mail@web.de
+
+wordpress
+  admin user: admin
+  admin pass: Wichburgastraﬂe
+  url: pixelpraktikum.000webhostapp.com
