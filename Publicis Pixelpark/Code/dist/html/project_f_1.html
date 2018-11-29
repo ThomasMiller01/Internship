@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" href="../css/vendor/lightgallery.min.css"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>NxtGenDevs</title>
+	</head>
+	<body>
+		<header id="head" style="height: 50%;">
+			<div class="header_div_project_f1">
+			</div>
+			<a href="profile2.html" class="backA"><img src="../img/back2.svg" class="backImg2"></a>
+		</header>
+		<div class="project">
+			<h2>Powermac G5 Hackintosh</h2>
+			<img class="pp1" src="../img/projects/felix/1/profile_pic.png">
+			<p>
+				Seit klein auf, war ich von Computern fasziniert. Nach dem Bau meines ersten Computers, war ich nicht mehr zu halten. Ich musste noch einen PC bauen. Meine PC-Builds waren noch nie nur Hardwareversiert, sondern hatten schon immer einen Touch Design. Ich hasse Unordentliche Kabel und Bezahle auch gerne mehr für meine Komponenten, damit sie farblich aufeinander abgestimmt sind. Als ich dann auf den Powermac G5 stieß war mir klar, 
+				So sollte mein „Arbeits-PC“ aussehen. Nach einiger Recherche fühlte ich mich in der Lage das G5 Gehäuse auf ATX umzubauen. Und letztendlich bin ich mit dem Endprodukt sehr zufrieden. Nach dem Bau ging es dann an die Installation von MacOS. Ich habe mich dazu entscheiden einen Dual-Boot aus Windows 10 und MacOS Sierra bzw. mittlerweile High Sierra laufen zu lassen. Nach einiger Recherche und einiger Hilfe aus dem Hackintosh-forum.de Forum hatte ich dann MacOS und Windows laufen. Der Hackintosh läuft auf Windows sowie MacOS stable. 
+				Folgende Komponenten habe ich verbaut:
+				<br>•	CPU: i7 5820K (6 Kerne 12 Threads @4.2Ghz)
+				<br>•	AsRock X99m Killer Mainboard (Eigentlich wollte ich aus ästhetischen Gründen das microATX Mainboard von EVGA nehmen allerdings ist das nicht Hackintosh-fähig)
+				<br>•	GTX 780ti im Referenzdesign von EVGA
+				<br>•	32GB Corsair LPX DDR4 3200mhz RAM 
+				<br>•	Noctua NH-D14 Tower Kühler 
+				<br>•	4TB Western Digital Festplatte
+				<br>•	128GB M.2 SSD von SanDisk
+				<br>•	Evga P2 750W Netzteil
+			</p>
+		</div>
+		<div class="projekt_imgs">
+			<div class="p1">
+				<img id="item1" data-src="../img/projects/felix/1/1.png" src="../img/projects/felix/1/1.png" style="margin-right: 0; margin-bottom: 30px;">
+				<img id="item2" data-src="../img/projects/felix/1/3.png" src="../img/projects/felix/1/3.png" style="margin-right: 0; margin-bottom: 30px;">
+			</div>
+			<div class="p2">
+				<img id="item3" data-src="../img/projects/felix/1/2.png" src="../img/projects/felix/1/2.png" style="margin-left: 0; margin-bottom: 30px;">
+				<img id="item4" data-src="../img/projects/felix/1/4.png" src="../img/projects/felix/1/4.png" style="margin-left: 0; margin-bottom: 30px;">
+			</div>
+		</div>
+		<script type="text/javascript">document.getElementById('head').style.height = window.innerWidth > 640 ? '50%' : '30%';</script>
+		<script src="../js/vendor/lightgallery.min.js"></script>
+		<script>
+			lightGallery(document.getElementById('item1'), {selector: 'this'});
+			lightGallery(document.getElementById('item2'), {selector: 'this'});
+			lightGallery(document.getElementById('item3'), {selector: 'this'});
+			lightGallery(document.getElementById('item4'), {selector: 'this'});
+
+			$(document).ready(function(){
+		            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+		        });
+		</script>
+	</body>
+</html>

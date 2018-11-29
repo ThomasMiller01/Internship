@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" href="../css/vendor/lightgallery.min.css"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>NxtGenDevs</title>
+	</head>
+	<body>
+		<header id="head" style="height: 50%;">
+			<div class="header_div_project_t3">
+			</div>
+			<a href="profile1.html" class="backA"><img src="../img/back2.svg" class="backImg2"></a>
+		</header>
+		<div class="project">
+			<h2>Projekt Thomas 3</h2>
+			<img class="pp1" src="../img/projects/thomas/3/profile_pic.png">
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+		</div>
+		<div class="projekt_imgs">
+			<div class="p1">
+				<img id="item1" data-src="../img/projects/thomas/3/1.png" src="../img/projects/thomas/3/1.png" style="margin-right: 0; margin-bottom: 30px;">
+				<img id="item2" data-src="../img/projects/thomas/3/3.png" src="../img/projects/thomas/3/3.png" style="margin-right: 0; margin-bottom: 30px;">
+			</div>
+			<div class="p2">
+				<img id="item3" data-src="../img/projects/thomas/3/2.png" src="../img/projects/thomas/3/2.png" style="margin-left: 0; margin-bottom: 30px;">
+				<img id="item4" data-src="../img/projects/thomas/3/4.png" src="../img/projects/thomas/3/4.png" style="margin-left: 0; margin-bottom: 30px;">
+			</div>
+		</div>
+		<script type="text/javascript">document.getElementById('head').style.height = window.innerWidth > 640 ? '50%' : '30%';</script>
+		<script src="../js/vendor/lightgallery.min.js"></script>
+		<script>
+			lightGallery(document.getElementById('item1'), {selector: 'this'});
+			lightGallery(document.getElementById('item2'), {selector: 'this'});
+			lightGallery(document.getElementById('item3'), {selector: 'this'});
+			lightGallery(document.getElementById('item4'), {selector: 'this'});
+
+			$(document).ready(function(){
+		            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+		        });
+		</script>
+	</body>
+</html>

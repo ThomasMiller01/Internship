@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" href="../css/vendor/lightgallery.min.css"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>NxtGenDevs</title>
+	</head>
+	<body>
+		<header id="head" style="height: 50%;">
+			<div class="header_div_project_g1">
+			</div>
+			<a href="index.html" class="backA"><img src="../img/back.svg" class="backImg"></a>
+		</header>
+		<div class="project">
+			<h2>MicroTech</h2>
+			<img class="pp1" src="../img/projects/gemeinsam/1/profile_pic.png">
+			<p>MicroTech war unser erstes gemeinsames Projekt. Mit dieser Seite hat alles begonnen. Im Laufe der 9. Klasse, in unserem Differenzierungskurs, lernten wir zum ersten mal den Bereich Web-Design kennen. Von der ersten Stunde an waren wir fasziniert und so beschäftigten wir uns nicht nur im Unterricht damit, sondern auch zuhause und lernten durch unzählige Tutorials und erweiterten damit unser Wissen. Nachdem wir im Unterricht dann die Grundsachen gelernt hatten, kam auch schon das erste Projekt auf uns zu. Vorgaben hatten wir keine, wir sollten einfach eine Seite programmieren. Während diesem Projekt teilten wir die Arbeit schon auf, Felix war für das Design zuständig und Thomas für den Code. Schon damals funktionierte diese Aufteilung sehr gut und so haben wir sie bis heute beibehalten. MicroTech war als Verkaufsplattform für Computer gedacht. So hatte man einen Abschnitt, wo man sich seinen Computer individuell aus vielen Componenten zusammenstellen konnte. Jedoch wurden auch schon fertige Computer angeboten. Bei diesem Projekt erprobten wir unser Wissen und wendetetn viele Techniken an, die wir auch heute noch verwenden.</p>
+		</div>
+		<div class="projekt_imgs">
+			<div class="p1">
+				<img id="item1" data-src="../img/projects/gemeinsam/1/1.png" src="../img/projects/gemeinsam/1/1.png" style="margin-right: 0; margin-bottom: 30px;">
+				<img id="item2" data-src="../img/projects/gemeinsam/1/3.png" src="../img/projects/gemeinsam/1/3.png" style="margin-right: 0; margin-bottom: 30px;">
+			</div>
+			<div class="p2">
+				<img id="item3" data-src="../img/projects/gemeinsam/1/2.png" src="../img/projects/gemeinsam/1/2.png" style="margin-left: 0; margin-bottom: 30px;">
+				<img id="item4" data-src="../img/projects/gemeinsam/1/4.png" src="../img/projects/gemeinsam/1/4.png" style="margin-left: 0; margin-bottom: 30px;">
+			</div>
+		</div>
+		<script type="text/javascript">document.getElementById('head').style.height = window.innerWidth > 640 ? '50%' : '30%';</script>
+		<script src="../js/vendor/lightgallery.min.js"></script>
+		<script>
+			lightGallery(document.getElementById('item1'), {selector: 'this'});
+			lightGallery(document.getElementById('item2'), {selector: 'this'});
+			lightGallery(document.getElementById('item3'), {selector: 'this'});
+			lightGallery(document.getElementById('item4'), {selector: 'this'});
+
+			$(document).ready(function(){
+		            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+		        });
+		</script>
+	</body>
+</html>

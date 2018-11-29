@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/script.min.js"></script>
+	<title>NxtGenDevs</title>
+</head>
+<body>
+	<a href="index.html"><img src="../img/back2.svg" class="backImg3"></a>
+	<div class="help-tip2">
+		<p>Wenn sie nochmal von vorne beginnen möchten oder sich vertippt haben, geben sie bitte: "stop" ein.</p>
+	</div>
+	<div class="contact2">
+		<div id="counter1" style="display: none;" class="1"></div>
+		<div id="counter2" style="display: none;" class="1"></div>
+		<div id="counter3" style="display: none;" class="0"></div>
+		<div id="counter4" style="display: none;" class="0"></div>
+		<div id="counter5" style="display: none;" class="0"></div>
+		<div id="compare" style="top: 100px;"></div>
+		<div class="handyText2" id="hText">
+			<script type="text/javascript">
+				document.write('<div class="yours messages" id="1"><div class="message last">Hallo, mein Name ist Zeus. Wie kann ich ihnen Behilflich sein?<br><br>Kontakt aufnehmen [1]<br>Bewertung schreiben [2]</div></div>');
+
+				//Kontakt aufnehmen
+				var name = 'none';
+				var email = 'none';
+				var nachricht1 = 'none';
+
+				//Bewerten
+				var sterne = '0';
+				var nachricht2 = 'none';
+
+				function write(type, txt)
+				{
+					var height = 0;
+					var i1 = parseInt(document.getElementById('counter2').className);
+					var i2 = parseInt(document.getElementById('counter1').className);	
+					for(var i=i1;i<=i2;i++)
+					{
+						height = height + document.getElementById(i).clientHeight;
+					}
+					if(height >= (document.getElementById('hText').clientHeight - 100))
+					{
+						document.getElementById('hText').style.height = 'auto';
+					}
+					if(type == 3)	
+					{
+						var div1 = document.createElement('DIV');
+						var div2 = document.createElement('DIV');
+						var t = document.createElement('IMG');
+						div1.className = 'yours messages';	
+						div1.id = 'bubbleGif';
+						div2.className = 'message2 last';
+						t.src = '../img/bubble.gif';
+						div2.appendChild(t);
+						div1.appendChild(div2);
+						document.getElementById('hText').appendChild(div1);
+					}
+					else if(type == 4)
+					{
+						var remove = document.getElementById('bubbleGif');
+						var elem = document.getElementById('hText');
+						elem.removeChild(remove);
+					}
+					else
+					{
+						var div1 = document.createElement('DIV');
+						var div2 = document.createElement('DIV');
+						var t = document.createTextNode(txt);
+						if(type == 1)
+						{
+							div1.className = 'yours messages';
+						}
+						else if(type == 2)
+						{
+							div1.className = 'mine messages';	
+						}
+						var id1 = parseInt(document.getElementById('counter1').className);
+						var id2 = id1 + 1;
+						document.getElementById('counter1').className = id2;
+						div1.id = id2;
+						div2.className = 'message last';
+						div2.appendChild(t);
+						div1.appendChild(div2);
+						document.getElementById('hText').appendChild(div1);
+					}	
+					if(document.getElementById('counter4').className == '111' && document.getElementById('counter5').className == '1')
+					{
+						email = txt;
+						//console.log(email);
+					}
+					else if(document.getElementById('counter4').className == '1111' && document.getElementById('counter5').className == '1')
+					{
+						nachricht1 = txt;
+						//console.log(nachricht1);
+						var url = 't=c&n=' + name + '&e=' + email + '&m=' + nachricht1 + '&d=m';
+						window.location.replace("../php/message.php?" + url);
+					}
+					else if(document.getElementById('counter4').className == '222' && document.getElementById('counter5').className == '1')
+					{
+						nachricht2 = txt;
+						var url2 = 't=r&s=' + sterne + '&m=' + nachricht2 + '&d=m';
+						window.location.replace("../php/message.php?" + url2);
+						//console.log(nachricht2);
+					}
+					else
+					{
+						if(document.getElementById('counter4').className == '11' && document.getElementById('counter5').className == '1')
+						{
+							name = txt;
+							//console.log(name);
+						}
+						else if(document.getElementById('counter4').className == '22' && document.getElementById('counter5').className == '1')
+						{
+							sterne = txt;
+							//console.log(sterne);
+						}
+					}
+				}
+
+				$(document).ready(function(){
+		            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+		        });
+			</script>
+			<form style="width: 100%; position: absolute; bottom: 10px;">
+				<input type="text" id="contactInput" placeholder="Please write ..." autocomplete="off" style="font: 400 13px'Open Sans', sans-serif; border: 0; padding: 0 15px; height: 10%; outline: 0;">
+				<button id="btnContact" style="border: 0; color: #00E34D; font-weight: 700; text-align: right; float: right; font: 400 13px 'Open Sans', sans-serif; background-color: white; margin-right: 10%;" onclick="javascript:zeus(document.getElementById('contactInput').value, parseInt(document.getElementById('counter3').className), parseInt(document.getElementById('counter4').className));document.getElementById('contactInput').value = '';return false;">Send</button> 
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">document.getElementById('contactInput').focus();</script>
+</body>
+</html>
