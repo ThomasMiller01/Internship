@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+		<script type="text/javascript" src="../js/vendor/instafeed.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/vendor/swiper.css">
+		<title>NxtGenDevs</title>
+	</head>
+	<body>
+		<header id="head" style="height: 50%;">
+			<div class="header_div_profile">
+			</div>
+			<div class="profile_name_div">	
+				<h1><span style="color: #76D5D1; width: 0; margin: 0; height: 0;">Felix</span> Kirsch</h1>
+				<h4>Design() Hardware()|</h4>
+			</div>
+			<a href="index.html" class="backA"><img src="../img/back.svg" class="backImg"></a>
+		</header>
+		<div class="profileAboutMe">
+			<h2>Wer bin ich?</h2>
+			<img src="../img/profile/2/profile_pic.png"/>
+			<p>Hi, ich bin Felix, ein 16 Jahre junger Schüler. 
+			Ich wohne in dem kleinen Städtchen Salzkotten, 
+			und interessiere mich seit meiner Kindheit für Design.
+			Meine Interessen liegen allerdings auch bei Computern,
+			insbesondere deren Hardware. Ich bin sehr leidenschaftlich
+			was meine Arbeit angeht und stecke mein Herz und Blut in 
+			jedes Projekt. Meinen ersten Computer baute ich im Alter von 
+			dreizehn Jahren und sammle seitdem weiterhin fleißig 
+			Erfahrung. Einer der Höhepunkte meiner Design Erfahrung
+			War das Praktikum bei Publicis Pixelpark. Aus diesem
+			Praktikum habe ich viel über den Prozess des Designs 
+			Mitgenommen, was auch meiner zukünftigen Arbeit hilft.
+			Für mehr Informationen oder Jobangebote kontaktieren Sie
+			mich bitte unter <a href="mailto:FelixKirsch@protonmail.com">FelixKirsch@protonmail.com</a>
+			</p>
+		</div>
+		<h2 class="pp">Persönliche Projekte</h2>
+		<div class="profileProjekte">	
+			<div class="projekt pLeft"><a href="project_f_1.html"><img src="../img/profile/2/1.png"></a></div>
+			<div class="projekt pMiddle"><a href="project_f_2.html"><img src="../img/profile/2/2.png"></a></div>
+			<div class="projekt pRight"><a href="project_f_3.html"><img src="../img/profile/2/3.png"></a></div>
+		</div>
+		<div class="profileProjekte2">	
+			<div class="swiper-container2">
+			    <div class="swiper-wrapper" style="display: flex; flex-shrink: 0; position: relative;">
+			      <div class="swiper-slide" style="width: 90%; margin-left: 5%; margin-right: 5%;"><a href="project_f_1.html"><img src="../img/profile/2/1.png" style="width: 100%;"></a><h2>Powermac G5 Hackintosh</h2><p>Komponente:
+				<br>•	CPU: i7 5820K (6 Kerne 12 Threads @4.2Ghz)
+				<br>•••</p></div>
+			      <div class="swiper-slide" style="width: 90%; margin-left: 5%; margin-right: 5%;"><a href="project_f_2.html"><img src="../img/profile/2/2.png" style="width: 100%;"></a><h2>Projekt 2</h2><p>Dies ist die Beschreibung von Projekt 2.</p></div>
+			      <div class="swiper-slide" style="width: 90%; margin-left: 5%; margin-right: 5%;"><a href="project_f_3.html"><img src="../img/profile/2/3.png" style="width: 100%;"></a><h2>Projekt 3</h2><p>Dies ist die Beschreibung von Projekt 3.</p></div>
+			    </div>
+			    <div class="swiper-pagination" style="bottom: auto !important;"></div>
+			</div>
+		</div>
+		<div class="ProfileSocial">
+			<h2 class="pp">Social</h2>
+			<div id="instafeed">
+				
+			</div>
+			<div class="social_mobile" style="display: none;">
+				<a href="https://www.instagram.com/felixkirschdesgn" target="_blank"><img src="../img/social/f2.svg"></a>
+				<a href="#"><img src="../img/social/f4.svg" target="_blank"></a>
+				<a href="#"><img src="../img/social/f3.svg" target="_blank"></a>
+			</div>
+		</div>
+		<script src="../js/vendor/swiper.js"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container2', {
+			slidesPerView: 'auto',
+			spaceBetween: 0,
+			centeredSlides: false,
+			pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			},
+			});
+
+			document.getElementById('head').style.height = window.innerWidth > 640 ? '50%' : '100%';
+
+		    var feed = new Instafeed({
+		        get: 'user',
+		        userId: '{ userid }',
+		        clientId: '{ clientId }',
+				accessToken: '{ accessToken }',
+		    });
+		    feed.run();
+
+		    $(document).ready(function(){
+		            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+		        });
+		</script>
+	</body>
+</html>
