@@ -1,2 +1,2 @@
 # Intership
-Here you can find all files about my interships.
+Here you can find all files about my internships.
